@@ -1,0 +1,266 @@
+/*.grid {
+  box-shadow: inset 1px 0px 0px 0px #0ff, inset -1px 0px 0px 0px #0ff
+}*/
+
+
+/* ==========================================================================
+   Comentários
+   ========================================================================== */
+
+.hero {
+  color: #294581;
+}
+
+.list-produtos {
+  margin-top: -2rem;
+}
+
+.produto.-item {
+  margin-top: 1rem;
+}
+
+@media only screen and (min-width: 512px) {
+  .list-produtos {
+    margin-top: 0;
+  }
+  .produto.-item {
+    margin-top: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .list-produtos {
+    margin-top: -3rem;
+    padding-left: 3rem;
+  }
+  .produto.-item {
+    margin-top: 3rem;
+  }
+}
+
+.produto.-item {
+  display: block;
+}
+
+.produto.-item .media {
+  -webkit-transition: all .24s cubic-bezier(.0, .0, .58, 1.0);
+  transition: all .24s cubic-bezier(.0, .0, .58, 1.0);
+  box-shadow: inset 0 0 0 1px #ddd;
+}
+
+.produto.-item:hover {
+  color: #294581;
+}
+
+.produto.-item:hover .media,
+.produto.-item:hover .media:hover {
+  box-shadow: inset 0 0 0 2px #294581;
+}
+
+.produto.-item .content.-thumbnail {
+  padding: .25rem;
+}
+
+.produto.-item .title {
+  font-size: 1.25rem;
+  font-weight: 400;
+  display: -webkit-box;
+  overflow: hidden;
+  margin-top: .5rem;
+  text-align: left;
+  text-overflow: ellipsis;
+  -ms-text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+@media only screen and (min-width: 1024px) {
+  .aside-menu {
+    color: white;
+    background-color: #ed1b2f;
+  }
+  .aside-nav {
+    padding: 1rem;
+  }
+  .produto.-item .title {
+    height: 3rem;
+    margin-top: 1rem;
+    -webkit-line-clamp: 2;
+  }
+}
+
+.aside-menu .title {
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin: 0;
+  padding: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #294581;
+}
+
+.aside-nav li {
+  margin-right: -1rem;
+  margin-left: -1rem;
+}
+
+.aside-nav li+li {
+  margin-top: .5rem;
+}
+
+#html .aside-nav li>a:hover,
+#html .aside-nav li>a.active {
+  background-color: #b11420;
+}
+
+
+/* Página: Home
+   ========================================================================== */
+
+.parallax.-home {
+  background-image: url(../img/home-parallax.jpg);
+}
+
+@media only screen and (min-width: 1024px) {
+  .parallax.-home {
+    background-attachment: fixed;
+  }
+}
+
+.parallax {
+  text-align: center;
+  color: white;
+}
+
+.parallax .page-title {
+  color: inherit;
+}
+
+.parallax .page-title.-line::before {
+  background: white;
+}
+
+@media only screen and (min-width: 1024px) {
+  .parallax .article {
+    padding: 0 15%;
+  }
+}
+
+.contato {
+  color: #294581;
+}
+
+.table-contato tr {
+  height: 4rem;
+}
+
+.table-contato td:first-child {
+  width: 3rem;
+}
+
+
+/* Página: Empresa
+   ========================================================================== */
+
+
+/* Página: Produtos
+   ========================================================================== */
+
+.produto.-main {
+  margin-top: 2rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  .produto.-main {
+    margin-top: 0;
+    padding-left: 3rem;
+  }
+}
+
+.produto.-main .name {
+  margin-bottom: 2rem;
+}
+
+.produto.-main .media {
+  box-shadow: 0 0 0 1px #ddd;
+}
+
+.produto.-main .media .content.-thumbnail {
+  padding: 1rem;
+}
+
+.produto.-main .list.-styled li {
+  margin-bottom: 0;
+}
+
+.produto.-main .list.-styled li+li {
+  margin-top: .5rem;
+}
+
+.-relacionados .list-produtos {
+  padding-left: 0;
+}
+
+.product-list-details .page-title {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.product-list-details .page-title .fa {
+  position: static;
+  margin-left: .5rem;
+}
+
+.product-review-item {
+  position: relative;
+}
+
+.product-review-item+.product-review-item {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.product-review-item p {
+  margin-top: 0;
+}
+
+#html .review-title {
+  line-height: 2rem;
+  margin: 0;
+}
+
+.product-review-item .rating {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.product-review-item+.product-review-item .rating {
+  margin-top: 1rem;
+}
+
+.social-share {
+  word-spacing: -.32360679775rem;
+}
+
+#html .social-share-item {
+  display: inline-block;
+  vertical-align: bottom;
+  word-spacing: normal;
+}
+
+#html .social-share-item+.social-share-item {
+  margin-left: 1rem;
+}
+
+
+/* Página: Contato
+   ========================================================================== */
+
+@media only screen and (min-width: 1024px) {
+  #html .ratio.ratio-map {
+    padding-bottom: 30rem;
+  }
+}

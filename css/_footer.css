@@ -1,0 +1,76 @@
+/*
+* Footer.css
+*/
+
+.global-footer {
+  color: white;
+}
+
+.global-footer hr {
+  background-color: #315092;
+}
+
+.footer-content {}
+
+.footer-navigation {
+  text-align: center;
+}
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-social li {
+  margin: auto 1rem;
+}
+
+.footer-social a {
+  font-size: 3rem;
+}
+
+.footer-copyright {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: #3c517d;
+}
+
+.dev-author a:not(:hover) {
+  opacity: 0.6;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-copyright {
+    line-height: 1rem;
+    padding: 0.5rem 0;
+    line-height: 2rem;
+  }
+  .dev-author {
+    position: absolute;
+    right: 0;
+    margin-right: 1rem;
+  }
+}
+
+.form-newsletter .title {
+  margin-bottom: 0.25rem;
+}
+
+.form-newsletter .title+small {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 511px) {
+  .brand-holder.-footer {
+    display: block;
+    text-align: center;
+    float: none;
+    margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .global-footer .form-newsletter {
+    margin-top: 2rem;
+  }
+}
